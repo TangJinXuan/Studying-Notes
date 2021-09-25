@@ -7,3 +7,7 @@ map的默认排序是根据其key值进行排序。而map的数据是基于pair�
 ## String的查找问题
 
 从右侧开始查找为rfind()函数，此外还有find_last_not_of(),find_first_not_of(),find_last_of(),find_first_of()作用如函数名所示
+
+## 位运算
+在int里面，存储的是数值的补码形式，因此转换为unsigned int时候可以直接相加，才不会产生错误。                
+另外，两个数相加可以理解为进位为(a&b)<<1，不进位为a^b（此处符号为亦或），二者作为加数再次相加，直至进位为0
